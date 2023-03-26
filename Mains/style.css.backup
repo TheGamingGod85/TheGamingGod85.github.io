@@ -35,11 +35,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .projects, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.projects .serv-content,
+.services .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -258,56 +258,54 @@ section .title::after{
     background: none;
 }
 
-/* projects section styling */
-.projects .title::after{
-    content: "what i created";
+/* services section styling */
+.services, .teams{
+    color:#fff;
+    background: #111;
 }
-.projects .serv-content .card{
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after,
+.teams .title::after{
+    background: #111;
+    content: "what i provide";
+}
+.services .serv-content .card{
     width: calc(33% - 20px);
-    background: #b3f1fb;
+    background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.projects .serv-content .card:hover{
+.services .serv-content .card:hover{
     background: crimson;
 }
-.projects .serv-content .card .box{
+.services .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.projects .serv-content .card:hover .box{
+.services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.projects .serv-content .card i{
+.services .serv-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.projects .serv-content .card:hover i{
+.services .serv-content .card:hover i{
     color: #fff;
 }
-.projects .serv-content .card .text{
+.services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
 /* skills section styling */
-.skills, .teams{
-    color:#fff;
-    background: #111;
-}
-.skills .title::before,
-.teams .title::before{
-    background: #fff;
-}
-.skills .title::after,
-.teams .title::after{
-    background: #111;
-    content: "what i provide";
-}
+
 .skills .title::after{
     content: "what i know";
 }
@@ -622,7 +620,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .projects .serv-content .card{
+    .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -646,7 +644,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .projects .serv-content .card{
+    .services .serv-content .card{
         width: 100%;
     }
 }
