@@ -11,3 +11,7 @@
     background: url('https://api.iconify.design/simple-icons/curseforge.svg?color=%2316ae55&width=32') no-repeat center center / contain;
     content: url('https://api.iconify.design/simple-icons/curseforge.svg?color=%2316ae55&width=32');
 }
+.instagram{
+    background: url('https://api.iconify.design/mdi/instagram.svg?color=%2316ae55&width=32') no-repeat center center / contain;
+    content: url('https://api.iconify.design/mdi/instagram.svg?color=%2316ae55&width=32');
+}
