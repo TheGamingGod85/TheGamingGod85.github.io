@@ -1,5 +1,13 @@
 .minecraft{
-    background: url('https://api.iconify.design/mdi/minecraft.svg?color=crimson&width=64') no-repeat center center / contain;
-    content: url('https://api.iconify.design/mdi/minecraft.svg?color=crimson&width=64');
+    background: url('https://api.iconify.design/mdi/minecraft.svg?color=%2316ae55&width=64') no-repeat center center / contain;
+    content: url('https://api.iconify.design/mdi/minecraft.svg?color=%2316ae55&width=64');
 
+}
+.modrinth{
+    background: url('https://api.iconify.design/simple-icons/modrinth.svg?color=%2316ae55&width=32') no-repeat center center / contain;
+    content: url('https://api.iconify.design/simple-icons/modrinth.svg?color=%2316ae55&width=32');
+}
+.curseforge{
+    background: url('https://api.iconify.design/simple-icons/curseforge.svg?color=%2316ae55&width=32') no-repeat center center / contain;
+    content: url('https://api.iconify.design/simple-icons/curseforge.svg?color=%2316ae55&width=32');
 }

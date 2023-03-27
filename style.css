@@ -35,13 +35,13 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .projects, .skills, .teams, .contact, footer{
+.about, .projects, .skills, .teams, .social, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .projects .serv-content,
 .skills .skills-content,
-.contact .contact-content{
+.social .social-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -258,42 +258,6 @@ section .title::after{
     background: none;
 }
 
-/* projects section styling */
-.projects .title::after{
-    content: "what i created";
-}
-.projects .serv-content .card{
-    width: calc(33% - 20px);
-    background: #b3f1fb;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.projects .serv-content .card:hover{
-    background: crimson;
-}
-.projects .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.projects .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.projects .serv-content .card i{
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-.projects .serv-content .card:hover i{
-    color: #fff;
-}
-.projects .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
 /* skills section styling */
 .skills, .teams{
     color:#fff;
@@ -365,11 +329,14 @@ section .title::after{
     top: 0;
     background: crimson;
 }
+.skills-content .right .java::before{
+    width: 55%;
+}
 .skills-content .right .python::before{
     width: 75%;
 }
-.skills-content .right .java::before{
-    width: 55%;
+.skills-content .right .html::before{
+    width: 90%;
 }
 .skills-content .right .audition::before{
     width: 90%;
@@ -379,6 +346,43 @@ section .title::after{
 }
 .skills-content .right .photoshop::before{
     width: 90%;
+}
+
+/* projects section styling */
+.projects .title::after{
+    content: "what i created";
+}
+.projects .serv-content .card{
+    width: calc(33% - 20px);
+    background: #b3f1fb;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.projects .serv-content .card:hover{
+    background: crimson;
+    color: #b3f1fb;
+}
+.projects .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.projects .serv-content .card:hover i{
+    color: #fff;
+}
+.projects .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 /* teams section styling */
@@ -444,60 +448,60 @@ section .title::after{
     background: crimson!important;
 }
 
-/* contact section styling */
-.contact .title::after{
+/* social section styling */
+.social .title::after{
     content: "get in touch";
 }
-.contact .contact-content .column{
+.social .social-content .column{
     width: calc(50% - 30px);
 }
-.contact .contact-content .text{
+.social .social-content .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.contact .contact-content .left p{
+.social .social-content .left p{
     text-align: justify;
 }
-.contact .contact-content .left .icons{
+.social .social-content .left .icons{
     margin: 10px 0;
 }
-.contact .contact-content .row{
+.social .social-content .row{
     display: flex;
     height: 65px;
     align-items: center;
 }
-.contact .contact-content .row .info{
+.social .social-content .row .info{
     margin-left: 30px;
 }
-.contact .contact-content .row i{
+.social .social-content .row i{
     font-size: 25px;
     color: crimson;
 }
-.contact .contact-content .info .head{
+.social .social-content .info .head{
     font-weight: 500;
 }
-.contact .contact-content .info .sub-title{
+.social .social-content .info .sub-title{
     color: #111;
 }
-.contact .right form .fields{
+.social .right form .fields{
     display: flex;
 }
-.contact .right form .field,
-.contact .right form .fields .field{
+.social .right form .field,
+.social .right form .fields .field{
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
 }
-.contact .right form .textarea{
+.social .right form .textarea{
     height: 80px;
     width: 100%;
 }
-.contact .right form .name{
+.social .right form .name{
     margin-right: 10px;
 }
-.contact .right form .field input,
-.contact .right form .textarea textarea{
+.social .right form .field input,
+.social .right form .textarea textarea{
     height: 100%;
     width: 100%;
     border: 1px solid lightgrey;
@@ -508,15 +512,15 @@ section .title::after{
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
 }
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
+.social .right form .field input:focus,
+.social .right form .textarea textarea:focus{
     border-color: #b3b3b3;
 }
-.contact .right form .textarea textarea{
+.social .right form .textarea textarea{
   padding-top: 10px;
   resize: none;
 }
-.contact .right form .button-area{
+.social .right form .button-area{
   display: flex;
   align-items: center;
 }
@@ -627,7 +631,7 @@ footer span a:hover{
         margin-bottom: 20px;
     }
     .skills .skills-content .column,
-    .contact .contact-content .column{
+    .social .social-content .column{
         width: 100%;
         margin-bottom: 35px;
     }
@@ -662,11 +666,11 @@ footer span a:hover{
     .skills .skills-content .left .text{
         font-size: 19px;
     }
-    .contact .right form .fields{
+    .social .right form .fields{
         flex-direction: column;
     }
-    .contact .right form .name,
-    .contact .right form .email{
+    .social .right form .name,
+    .social .right form .email{
         margin: 0;
     }
     .right form .error-box{
