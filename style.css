@@ -736,7 +736,7 @@ footer span a:hover{
   transition: all 0.3s ease-out;
 }
 .wrapper .button:nth-child(1):hover .icon{
-  background: #5865f2;
+  background: #f96854;
 }
 .wrapper .button:nth-child(2):hover .icon{
   background: #1DA1F2;
@@ -750,6 +750,7 @@ footer span a:hover{
 .wrapper .button:nth-child(5):hover .icon{
   background: #ff0000;
 }
+
 .wrapper .button .icon i{
   font-size: 25px;
   line-height: 60px;
@@ -766,7 +767,7 @@ footer span a:hover{
   transition: all 0.3s ease-out;
 }
 .wrapper .button:nth-child(1) span{
-  color: #5865f2;
+  color: #f96854;
 }
 .wrapper .button:nth-child(2) span{
   color: #1DA1F2;
