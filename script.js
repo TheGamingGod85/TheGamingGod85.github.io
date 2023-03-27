@@ -70,4 +70,25 @@ $(document).ready(function(){
             }
         }
     });
+
+    const data = {
+        name: 'name',
+        email: 'email',
+        subject: 'subject',
+        message: 'message',
+        gCaptchaResponse: document.getElementById('g-recaptcha-response').value,
+    };
+      
+      const url = 'https://script.google.com/macros/u/1/s/AKfycbyb0HJBBUpNUufsceycVgRoiG9bl2u8tgO_N22R5izP6k8SEtUrqi8ULS75nQVpdUKg/exec';
+      
+    fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8',
+        },
+        body: JSON.stringify(data),
+    })
+        .then((res) => res.json())
+        .then((data) => console.log('data', data))
+        .catch((err) => console.log('err', err));
 });

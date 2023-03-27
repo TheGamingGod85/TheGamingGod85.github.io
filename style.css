@@ -1,5 +1,6 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 *{
     margin: 0;
@@ -406,6 +407,7 @@ section .title::after{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    color: #b3f1fb;
 }
 .teams .carousel .card:hover .box{
     transform: scale(1.05);
@@ -527,7 +529,7 @@ section .title::after{
 .right form .button-area button{
   color: #fff;
   display: block;
-  width: relative!important;
+  width: 550px!important;
   height: 45px;
   outline: none;
   font-size: 18px;
@@ -543,8 +545,6 @@ section .title::after{
   color: crimson;
   background: none;
 }
-
-
 
 
 /* footer section styling */
@@ -688,4 +688,95 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+
+/* Iconify CSS Icons*/
+.minecraft{
+    background: url('https://api.iconify.design/mdi/minecraft.svg?color=%2316ae55&width=64') no-repeat center center / contain;
+    content: url('https://api.iconify.design/mdi/minecraft.svg?color=%2316ae55&width=64');
+
+}
+.modrinth{
+    background: url('https://api.iconify.design/simple-icons/modrinth.svg?color=%2316ae55&width=32') no-repeat center center / contain;
+    content: url('https://api.iconify.design/simple-icons/modrinth.svg?color=%2316ae55&width=32');
+}
+.curseforge{
+    background: url('https://api.iconify.design/simple-icons/curseforge.svg?color=%2316ae55&width=32') no-repeat center center / contain;
+    content: url('https://api.iconify.design/simple-icons/curseforge.svg?color=%2316ae55&width=32');
+}
+
+
+/* Animateed Social Media Buttons */
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  margin-top: 40px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #5865f2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #5865f2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
 }
