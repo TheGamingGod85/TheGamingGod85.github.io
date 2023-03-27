@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 <body>
@@ -243,7 +244,7 @@
                             <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit">Send Message</button>
+                            <button type="submit" class="g-recaptcha" data-sitekey="6LfSSDUlAAAAAOUhfxSTkpyDrj1yiPUAPLKRaxay" data-callback="doPOST" data-action="submit">Send Message</button>
                         </div>
                     </form>
                 </div>
