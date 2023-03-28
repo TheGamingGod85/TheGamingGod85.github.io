@@ -72,23 +72,29 @@ $(document).ready(function(){
     });
 
     const data = {
-        name: 'name',
-        email: 'email',
-        subject: 'subject',
-        message: 'message',
-        gCaptchaResponse: document.getElementById('g-recaptcha-response').value,
-    };
+        name: 'John',
+        email: 'john@domain.com',
+        subject: 'Contact form submission',
+        message: 'Receiving forms is easy and simple now!',
+        gCaptchaResponse: 'RECAPTCHA_RESPONSE_TOKEN' // Replace with actual response token
+      };
       
-      const url = 'https://script.google.com/macros/u/1/s/AKfycbyb0HJBBUpNUufsceycVgRoiG9bl2u8tgO_N22R5izP6k8SEtUrqi8ULS75nQVpdUKg/exec';
+      const url = 'https://script.google.com/macros/s/AKfycbyb0HJBBUpNUufsceycVgRoiG9bl2u8tgO_N22R5izP6k8SEtUrqi8ULS75nQVpdUKg/exec';
       
-    fetch(url, {
+      fetch(url, {
         method: 'POST',
         headers: {
-          'Content-Type': 'text/plain;charset=utf-8',
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify(data),
-    })
+      })
         .then((res) => res.json())
-        .then((data) => console.log('data', data))
-        .catch((err) => console.log('err', err));
+        .then((data) => {
+            console.log('data', data);
+            // handle successful form submission here, e.g. show success message to user
+        })
+        .catch((err) => {
+            console.log('err', err);
+            // handle error here, e.g. show error message to user
+        });   
 });
