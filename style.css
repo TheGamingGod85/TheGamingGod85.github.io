@@ -361,12 +361,14 @@ section .title::after{
 }
 .projects .serv-content .card{
     width: calc(33% - 20px);
+    height: 350px ;
     background: #b3f1fb;
-    text-align: justify;
+    text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 25px;
 }
 .projects .serv-content .card:hover{
     background: crimson;
