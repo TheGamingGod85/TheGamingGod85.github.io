@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Multimedia Editor", "Developer", "Designer", "Freelancer", "Gamer"],
+        strings: ["Multimedia Editor", "Developer", "Designer", "Freelancer", "Gamer", "Programmer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Multimedia Editor", "Developer", "Designer", "Freelancer", "Gamer"],
+        strings: ["Multimedia Editor", "Developer", "Designer", "Freelancer", "Gamer", "Programmer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -70,4 +70,31 @@ $(document).ready(function(){
             }
         }
     });
+
+    const data = {
+        name: 'John',
+        email: 'john@domain.com',
+        subject: 'Contact form submission',
+        message: 'Receiving forms is easy and simple now!',
+        gCaptchaResponse: 'RECAPTCHA_RESPONSE_TOKEN' // Replace with actual response token
+      };
+      
+      const url = 'https://script.google.com/macros/s/AKfycbyb0HJBBUpNUufsceycVgRoiG9bl2u8tgO_N22R5izP6k8SEtUrqi8ULS75nQVpdUKg/exec';
+      
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+            console.log('data', data);
+            // handle successful form submission here, e.g. show success message to user
+        })
+        .catch((err) => {
+            console.log('err', err);
+            // handle error here, e.g. show error message to user
+        });   
 });

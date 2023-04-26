@@ -1,5 +1,6 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 *{
     margin: 0;
@@ -35,11 +36,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .projects, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.projects .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -258,54 +259,20 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
-.services, .teams{
+/* skills section styling */
+.skills, .teams{
     color:#fff;
     background: #111;
 }
-.services .title::before,
+.skills .title::before,
 .teams .title::before{
     background: #fff;
 }
-.services .title::after,
+.skills .title::after,
 .teams .title::after{
     background: #111;
     content: "what i provide";
 }
-.services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover{
-    background: crimson;
-}
-.services .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.services .serv-content .card i{
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i{
-    color: #fff;
-}
-.services .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-/* skills section styling */
-
 .skills .title::after{
     content: "what i know";
 }
@@ -363,11 +330,14 @@ section .title::after{
     top: 0;
     background: crimson;
 }
+.skills-content .right .java::before{
+    width: 55%;
+}
 .skills-content .right .python::before{
     width: 75%;
 }
-.skills-content .right .java::before{
-    width: 55%;
+.skills-content .right .html::before{
+    width: 90%;
 }
 .skills-content .right .audition::before{
     width: 90%;
@@ -377,6 +347,43 @@ section .title::after{
 }
 .skills-content .right .photoshop::before{
     width: 90%;
+}
+
+/* projects section styling */
+.projects .title::after{
+    content: "what i created";
+}
+.projects .serv-content .card{
+    width: calc(33% - 20px);
+    background: #b3f1fb;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.projects .serv-content .card:hover{
+    background: crimson;
+    color: #b3f1fb;
+}
+.projects .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.projects .serv-content .card:hover i{
+    color: #fff;
+}
+.projects .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 /* teams section styling */
@@ -400,6 +407,7 @@ section .title::after{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    color: #b3f1fb;
 }
 .teams .carousel .card:hover .box{
     transform: scale(1.05);
@@ -521,7 +529,7 @@ section .title::after{
 .right form .button-area button{
   color: #fff;
   display: block;
-  width: 160px!important;
+  width: 550px!important;
   height: 45px;
   outline: none;
   font-size: 18px;
@@ -537,6 +545,8 @@ section .title::after{
   color: crimson;
   background: none;
 }
+
+
 /* footer section styling */
 footer{
     background: #111;
@@ -620,7 +630,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .projects .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -644,7 +654,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .projects .serv-content .card{
         width: 100%;
     }
 }
@@ -678,4 +688,96 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+
+/* Iconify CSS Icons*/
+.minecraft{
+    background: url('https://api.iconify.design/mdi/minecraft.svg?color=%2316ae55&width=64') no-repeat center center / contain;
+    content: url('https://api.iconify.design/mdi/minecraft.svg?color=%2316ae55&width=64');
+
+}
+.modrinth{
+    background: url('https://api.iconify.design/simple-icons/modrinth.svg?color=%2316ae55&width=32') no-repeat center center / contain;
+    content: url('https://api.iconify.design/simple-icons/modrinth.svg?color=%2316ae55&width=32');
+}
+.curseforge{
+    background: url('https://api.iconify.design/simple-icons/curseforge.svg?color=%2316ae55&width=32') no-repeat center center / contain;
+    content: url('https://api.iconify.design/simple-icons/curseforge.svg?color=%2316ae55&width=32');
+}
+
+
+/* Animated Social Media Buttons */
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  margin-top: 40px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #f96854;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #f96854;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
 }
