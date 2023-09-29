@@ -337,21 +337,28 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .java::before{
+    width: 45%;
+}
+.skills-content .right .c::before{
+    width: 50%;
+}
+.skills-content .right .dart::before{
+    width: 80%;
+}
+
+.skills-content .right .python::before{
+    width: 90%;
+}
+.skills-content .right .node::before{
     width: 55%;
 }
-.skills-content .right .python::before{
-    width: 75%;
+.skills-content .right .web::before{
+    width: 85%;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 85%;
 }
-.skills-content .right .audition::before{
-    width: 90%;
-}
-.skills-content .right .premier::before{
-    width: 90%;
-}
-.skills-content .right .photoshop::before{
+.skills-content .right .creative::before{
     width: 90%;
 }
 
