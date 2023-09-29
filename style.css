@@ -367,25 +367,44 @@ section .title::after{
     content: "what i created";
 }
 .projects .serv-content .card{
-    width: calc(33% - 20px);
-    height: 350px ;
+    width: calc(50% - 20px);
+    height: 250px ;
     background: #b3f1fb;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
-    cursor: pointer;
+    border: 3px solid crimson;
     transition: all 0.3s ease;
     margin-bottom: 25px;
 }
 .projects .serv-content .card:hover{
     background: crimson;
     color: #b3f1fb;
+    border: 3px solid #b3f1fb;
+}
+.projects .serv-content .button{
+    color: #b3f1fb;
+    font-size: 15px;
+    width: calc(50% - 20px);
+    padding: 10px 15px;
+    background-color: crimson;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: crimson;
+    cursor: pointer;
+
+}
+.projects .serv-content .card:hover .button{
+    background-color: #b3f1fb;
+    color: crimson;
+    
 }
 .projects .serv-content .card .box{
     transition: all 0.3s ease;
 }
 .projects .serv-content .card:hover .box{
     transform: scale(1.05);
+
 }
 .projects .serv-content .card i{
     font-size: 50px;
@@ -396,7 +415,7 @@ section .title::after{
     color: #fff;
 }
 .projects .serv-content .card .text{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
